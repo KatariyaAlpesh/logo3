@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RecyclerView_Activity.Level_Extra_RecyclerView_Activity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LevelExtraRelativeLayout"
+        android:orientation="vertical"
+        android:background="#62D7EB"
+
+        >
+
+        <ImageView
+            android:id="@+id/ImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_bg"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/LevelExtra_ImageBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_back">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LevelExtra_TextLevel"
+            android:layout_marginBottom="5dp"
+            android:text="Extra Level"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fount_patern"
+            android:layout_alignBottom="@+id/ImageTitle"
+            >
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ImageTitle"
+            android:id="@+id/LevelExtra_RecyclerView"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

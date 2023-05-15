@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LevelPage_Activity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/LevelPage_RelativeLayout"
+        android:orientation="vertical"
+        android:background="@color/button"
+
+        >
+
+        <ImageView
+            android:id="@+id/LevelPage_ImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_bg"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/LevelPageImageBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_back">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LevelPage_ImageTitle"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/bluebutton_background"
+            >
+
+            <TextView
+                android:id="@+id/LevelPage_TextLevel"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_button"
+                android:fontFamily="@font/fount_patern"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Level"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/LevelPage_LevelExtra"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/blue_button"
+                android:textColor="@color/white"
+                android:text="Extra"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/fount_patern"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/LevelPage_LevelExpert"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/blue_button"
+                android:fontFamily="@font/fount_patern"
+                android:gravity="center"
+                android:text="Expert"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

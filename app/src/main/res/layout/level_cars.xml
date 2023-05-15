@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Level_Activity.LEVEL_Cars"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CarsRLayout"
+        android:orientation="vertical"
+        android:background="#62D7EB"
+
+        >
+
+        <ImageView
+            android:id="@+id/CarsImageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title_bg"
+            >
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/CarsImageBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/button_back">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/CarsTextLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CarsImageTitle"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/fount_patern"
+            android:text="Car Logo"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <GridView
+            android:id="@+id/CarsGridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/CarsTextLevel"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#62D7EB"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:numColumns="4">
+
+        </GridView>
+
+    </RelativeLayout>
+
+</LinearLayout>

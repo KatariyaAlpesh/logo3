@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Logo"
+        tools:targetApi="31">
+        <activity
+            android:name=".ImagePage.LEVEL_Fashion_ImagePage"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionPage.LEVEL_Fashion_Solution_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Level_Activity.LEVEL_Fashion"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionPage.LEVEL_Cars_Solution_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Level_Activity.LEVEL_Cars"
+            android:exported="false" />
+        <activity
+            android:name=".ImagePage.LEVEL_Cars_ImagePage"
+            android:exported="false" />
+        <activity
+            android:name=".ImagePage.LEVEL_MobileApp_ImagePage"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionPage.LEVEL_MobileApp_solution_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Level_Activity.LEVEL_MobileApp"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView_Activity.Level_Extra_RecyclerView_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionPage.LEVEL_3_Solution_Page"
+            android:exported="false" />
+        <activity
+            android:name=".ImagePage.LEVEL_3_imagePage"
+            android:exported="false" />
+        <activity
+            android:name=".Level_Activity.LEVEL_3"
+            android:exported="false" />
+        <activity
+            android:name=".SolutionPage.LEVEL_2_Solution_Page"
+            android:exported="false" />
+        <activity
+            android:name=".ImagePage.LEVEL_2_imagePage"
+            android:exported="false" />
+        <activity
+            android:name=".Level_Activity.LEVEL_2"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView_Activity.Level_1_RecyclerView_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LevelPage_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Play_Challenge_Page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImagePage.LEVEL_1_ImagePage"
+            android:exported="true" />
+        <activity
+            android:name=".SolutionPage.LEVEL_1_Solution_Page"
+            android:exported="true" />
+        <activity
+            android:name=".Level_Activity.LEVEL_1"
+            android:exported="true" />
+    </application>
+
+</manifest>
